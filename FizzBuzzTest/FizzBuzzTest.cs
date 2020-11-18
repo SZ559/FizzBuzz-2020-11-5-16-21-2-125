@@ -20,5 +20,15 @@ namespace FizzBuzzTest
             Assert.Equal(actual, expected);
         }
 
+        [Fact]
+        public void Should_Return_2_Given_Input_2()
+        {
+            //Given
+            var expected = "2";
+            //When
+            var actual = fizzBuzz.Say(2);
+            //Then
+            Assert.Equal(actual, expected);
+        }
     }
 }
