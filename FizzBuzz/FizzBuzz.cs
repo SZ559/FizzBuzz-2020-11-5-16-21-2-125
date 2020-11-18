@@ -18,6 +18,11 @@ namespace FizzBuzz
                 return "Buzz";
             }
 
+            if (count % 7 == 0)
+            {
+                return "Whizz";
+            }
+
             return count.ToString();
         }
     }

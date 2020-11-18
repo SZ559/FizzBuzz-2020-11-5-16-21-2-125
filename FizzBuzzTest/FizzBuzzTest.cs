@@ -52,5 +52,16 @@ namespace FizzBuzzTest
             //Then
             Assert.Equal(actual, expected);
         }
+
+        [Fact]
+        public void Should_Return_Buzz_Given_Input_Mutiple_Of_7()
+        {
+            //Given
+            var expected = "Whizz";
+            //When
+            var actual = fizzBuzz.Say(7);
+            //Then
+            Assert.Equal(actual, expected);
+        }
     }
 }
