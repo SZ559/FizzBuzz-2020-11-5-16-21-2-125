@@ -54,7 +54,7 @@ namespace FizzBuzzTest
         }
 
         [Fact]
-        public void Should_Return_Buzz_Given_Input_Mutiple_Of_7()
+        public void Should_Return_Whizz_Given_Input_Mutiple_Of_7()
         {
             //Given
             var expected = "Whizz";
@@ -75,22 +75,24 @@ namespace FizzBuzzTest
             Assert.Equal(actual, expected);
         }
 
+        [Fact]
         public void Should_Return_BuzzWhizz_Given_Input_Mutiple_Of_5_And_Mutiple_Of_7()
         {
             //Given
             var expected = "BuzzWhizz";
             //When
-            var actual = fizzBuzz.Say(15);
+            var actual = fizzBuzz.Say(35);
             //Then
             Assert.Equal(actual, expected);
         }
 
-        public void Should_Return_FizzBuzzWhizz_Given_Input_Mutiple_Of_5_And_Mutiple_Of_7()
+        [Fact]
+        public void Should_Return_FizzBuzzWhizz_Given_Input_Mutiple_Of_3_And_5_And_7()
         {
             //Given
             var expected = "FizzBuzzWhizz";
             //When
-            var actual = fizzBuzz.Say(15);
+            var actual = fizzBuzz.Say(105);
             //Then
             Assert.Equal(actual, expected);
         }
