@@ -10,6 +10,13 @@ namespace FizzBuzz
         {
             var word = string.Empty;
 
+            word = NewMethod(count, word);
+
+            return string.IsNullOrEmpty(word) ? count.ToString() : word;
+        }
+
+        private string NewMethod(int count, string word)
+        {
             if (count % 3 == 0)
             {
                 word += "Fizz";
@@ -25,7 +32,7 @@ namespace FizzBuzz
                 word += "Whizz";
             }
 
-            return string.IsNullOrEmpty(word) ? count.ToString() : word;
+            return word;
         }
     }
 }
